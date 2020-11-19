@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>App</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>App</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+
+    <div class="form-items">
+        <form>
+            <input type="email" name="email" placeholder="Email..." ngModel #email="ngModel" /><br>
+            <input type="password" name="password" placeholder="Password..." ngModel #password="ngModel" /><br>
+            <button type="submit" name="login">Login</button>
+        </form>
+    </div>
+
+    <app-root></app-root>
 </body>
+
 </html>
